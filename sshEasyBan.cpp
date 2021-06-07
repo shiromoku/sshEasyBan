@@ -62,9 +62,9 @@ int main(int argc, char *argv[])
     } //read all line of file
 
     int i = 0;
-    ofstream banOut(fileName + "Banlist.txt");
-    ofstream IPOut(fileName + "IP.xls");
-    ofstream userOut(fileName + "user.xls");
+    ofstream banOut(fileName + "_Banlist.txt");
+    ofstream IPOut(fileName + "_IP.xls");
+    ofstream userOut(fileName + "_User.xls");
     banOut << "vim /etc/hosts.deny"<<endl;
     for (auto it = IP.begin(); it != IP.end(); it++, i++)
     {
